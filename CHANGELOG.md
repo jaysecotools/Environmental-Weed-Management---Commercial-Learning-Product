@@ -1,5 +1,16 @@
 # Changelog
 
+## [Unreleased] — D-0006: Registration copy bound from config
+### Changed
+- `js/config/course-config.js` — expanded `registration` export to include all compliance-critical and positioning strings.
+- `register.html` — added `data-bind` attributes to the intro block, footnote and success panel; points list is now rendered from config.
+- `js/register.js` — imports `registration`, binds strings on load via `bindCopy()`.
+
+### Notes
+- Form field labels and hints remain hard-coded by design (D-0006).
+- No functional change to validation or the demonstration submit behaviour.
+- No data collected, transmitted or stored.
+
 ## [Unreleased] — Stage 1: Landing page
 ### Added
 - `index.html` — responsive landing page (hero, why, gains, programme, who, approach, completion, final CTA, footer).

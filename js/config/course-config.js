@@ -161,3 +161,38 @@ export const registration = {
   successBody:
     "This is where a real registration would be created. Nothing was sent or stored.",
 };
+
+// Mock learner and progress — DEMONSTRATION ONLY.
+// Fictional data; not a real person. Not persisted anywhere.
+export const mockLearner = {
+  firstName: "Demo",
+  lastName: "Learner",
+  displayName: "Demo Learner",
+  email: "demo.learner@example.com",
+  organisation: "Example Environmental Services (placeholder)",
+  role: "Weed management contractor",
+  enrolledDate: "2026-11-20",
+  certificateStatus: "locked", // "locked" | "available" | "issued"
+  certificateId: null,
+};
+
+// Per-module mock state. moduleId values must match `modules` in this file.
+// state: "completed" | "in-progress" | "locked"
+export const mockProgress = {
+  m1: { state: "completed", score: 4, scoreTotal: 5, completedOn: "2026-11-18" },
+  m2: { state: "completed", score: 5, scoreTotal: 5, completedOn: "2026-11-19" },
+  m3: { state: "in-progress", lastPosition: 0.4 }, // 40% through the module
+  m4: { state: "locked" },
+  m5: { state: "locked" },
+  m6: { state: "locked" },
+  m7: { state: "locked" },
+};
+
+// Mock recent activity, newest first. Fictional; for layout demonstration only.
+export const mockActivity = [
+  { date: "2026-11-19", label: "Completed knowledge check", detail: "Module 2 — 5/5" },
+  { date: "2026-11-19", label: "Completed module", detail: "Module 2 — Weed identification and ecological impacts" },
+  { date: "2026-11-18", label: "Completed knowledge check", detail: "Module 1 — 4/5" },
+  { date: "2026-11-18", label: "Completed module", detail: "Module 1 — Understanding the environment you're working in" },
+  { date: "2026-11-20", label: "Enrolled in pilot", detail: "Demonstration enrolment" },
+];

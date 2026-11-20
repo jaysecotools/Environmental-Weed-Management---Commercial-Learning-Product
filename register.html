@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register your interest — Environmental Weed Management</title>
+    <meta
+      name="description"
+      content="Register your interest in the Environmental Weed Management professional development programme. Demonstration registration page — no data is sent or stored."
+    />
+    <meta name="theme-color" content="#1f3a2e" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/register.css" />
+    <script type="module" src="js/register.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Environmental Weed Management home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+              <path d="M6 26c4-9 9-15 20-20-1 11-7 17-15 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 26c3-2 6-3 9-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-title">Environmental Weed Management</span>
+            <span class="brand-sub">Tasmania, Australia</span>
+          </span>
+        </a>
+        <a class="btn btn-ghost btn-sm" href="index.html">Back to home</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="register-shell" aria-labelledby="register-title">
+        <div class="container register-container">
+          <div class="register-intro">
+            <p class="eyebrow">Register your interest</p>
+            <h1 id="register-title">Join the pilot</h1>
+            <p class="register-lede">
+              Register your interest in the Environmental Weed Management professional development
+              programme. We'll use this to gauge demand and invite a small group of pilot learners.
+            </p>
+
+            <aside class="callout callout--demo" role="note" aria-label="Demonstration notice">
+              <strong>Demonstration only.</strong>
+              This is a prototype registration page. No information is sent anywhere or stored.
+              Passwords are not collected or saved. You can use fictitious details.
+            </aside>
+
+            <ul class="register-points">
+              <li>Non-accredited professional development</li>
+              <li>Approximately 3–4 hours of online learning</li>
+              <li>Optional facilitated workshop</li>
+              <li>Certificate of Completion for successful participants</li>
+            </ul>
+          </div>
+
+          <div class="register-card">
+            <form id="register-form" class="register-form" novalidate aria-describedby="form-demo-notice">
+              <p id="form-demo-notice" class="visually-hidden">
+                Demonstration form. Nothing is submitted, stored or transmitted.
+              </p>
+
+              <div class="form-row form-row--split">
+                <div class="form-field">
+                  <label for="first-name">First name <span class="req" aria-hidden="true">*</span></label>
+                  <input id="first-name" name="firstName" type="text" autocomplete="given-name"
+                         required aria-required="true" aria-describedby="first-name-error" />
+                  <p class="field-error" id="first-name-error" role="alert" hidden></p>
+                </div>
+                <div class="form-field">
+                  <label for="last-name">Last name <span class="req" aria-hidden="true">*</span></label>
+                  <input id="last-name" name="lastName" type="text" autocomplete="family-name"
+                         required aria-required="true" aria-describedby="last-name-error" />
+                  <p class="field-error" id="last-name-error" role="alert" hidden></p>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email"
+                       required aria-required="true" aria-describedby="email-error" />
+                <p class="field-error" id="email-error" role="alert" hidden></p>
+              </div>
+
+              <div class="form-field">
+                <label for="organisation">Organisation / business <span class="optional">(optional)</span></label>
+                <input id="organisation" name="organisation" type="text" autocomplete="organization"
+                       aria-describedby="organisation-error" />
+                <p class="field-error" id="organisation-error" role="alert" hidden></p>
+              </div>
+
+              <div class="form-field">
+                <label for="role">Occupation / role <span class="req" aria-hidden="true">*</span></label>
+                <select id="role" name="role" required aria-required="true" aria-describedby="role-error">
+                  <option value="">Select your role</option>
+                  <option>Weed management contractor</option>
+                  <option>Environmental contractor</option>
+                  <option>Council / field worker</option>
+                  <option>Landcare / NRM</option>
+                  <option>Land manager / supervisor</option>
+                  <option>Environmental restoration practitioner</option>
+                  <option>Other</option>
+                </select>
+                <p class="field-error" id="role-error" role="alert" hidden></p>
+              </div>
+
+              <div class="form-row form-row--split">
+                <div class="form-field">
+                  <label for="password">Password <span class="req" aria-hidden="true">*</span></label>
+                  <input id="password" name="password" type="password" autocomplete="new-password"
+                         required aria-required="true" aria-describedby="password-error password-hint" />
+                  <p class="field-hint" id="password-hint">At least 8 characters. Demonstration only — not stored.</p>
+                  <p class="field-error" id="password-error" role="alert" hidden></p>
+                </div>
+                <div class="form-field">
+                  <label for="confirm-password">Confirm password <span class="req" aria-hidden="true">*</span></label>
+                  <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password"
+                         required aria-required="true" aria-describedby="confirm-password-error" />
+                  <p class="field-error" id="confirm-password-error" role="alert" hidden></p>
+                </div>
+              </div>
+
+              <div class="form-field form-field--checkbox">
+                <input id="accept-terms" name="acceptTerms" type="checkbox" required aria-required="true"
+                       aria-describedby="accept-terms-error" />
+                <label for="accept-terms">
+                  I accept the <a href="#" aria-disabled="true" tabindex="-1">privacy policy (placeholder)</a>
+                  and <a href="#" aria-disabled="true" tabindex="-1">terms of use (placeholder)</a>.
+                  <span class="req" aria-hidden="true">*</span>
+                </label>
+                <p class="field-error" id="accept-terms-error" role="alert" hidden></p>
+              </div>
+
+              <button class="btn btn-primary btn-lg" type="submit">Create account</button>
+
+              <p class="form-footnote">
+                This is a demonstration. No account is created, nothing is transmitted or stored,
+                and no passwords are saved. Your test entries disappear when you leave the page.
+              </p>
+            </form>
+
+            <div id="register-success" class="register-success" role="status" aria-live="polite" hidden>
+              <h2>Demonstration complete</h2>
+              <p>
+                Thanks — this is where a real registration would be created. Nothing was sent or stored.
+              </p>
+              <p>
+                In a live product, the next step would be to sign in to the learner dashboard.
+              </p>
+              <div class="register-success-actions">
+                <a class="btn btn-primary" href="dashboard.html">Continue to demo dashboard</a>
+                <a class="btn btn-ghost" href="index.html">Back to home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <p class="footer-title">Environmental Weed Management</p>
+          <p class="footer-note">Non-accredited professional development. Not a nationally recognised qualification.</p>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> — Prototype. Content provisional.</p>
+      </div>
+    </footer>
+  </body>
+</html>

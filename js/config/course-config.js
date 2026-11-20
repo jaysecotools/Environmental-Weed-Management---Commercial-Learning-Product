@@ -215,3 +215,18 @@ export const mockActivity = [
   { date: "2026-11-18", label: "Completed module", detail: "Module 1 — Understanding the environment you're working in" },
   { date: "2026-11-20", label: "Enrolled in pilot", detail: "Demonstration enrolment" },
 ];
+
+// Shared placeholder copy for module pages. The real module content lives
+// in module-content.js; these strings are common UI text used by all modules.
+// Everything here is PROVISIONAL and marked as such in the UI.
+export const modulePlaceholderCopy = {
+  provisionalBanner:
+    "Placeholder content. This module is a structural demonstration only. All text, examples, activities and questions are provisional and must not be treated as approved curriculum.",
+  notAdviceNotice:
+    "Nothing on this page constitutes chemical, environmental, legal or site-specific advice. Always follow product labels, permits, legislation and the direction of appropriately trained and authorised people.",
+  completionCta: "Mark module complete (demonstration)",
+  completionDone: "Module marked complete in this session (not saved).",
+  backToDashboard: "Back to dashboard",
+  prevLabel: "Previous module",
+  nextLabel: "Next module",
+};

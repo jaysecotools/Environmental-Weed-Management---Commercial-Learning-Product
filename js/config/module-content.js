@@ -10,101 +10,159 @@
 
 export const moduleContent = {
   m1: {
+    // DRAFT content — pending owner review and approval.
+    // Uses only examples named in the master brief. No verified Tasmanian
+    // specific claims; items requiring verification are marked [VERIFY] in
+    // the corresponding docs/Module_01_Content.md.
     learningOutcomes: [
-      "Placeholder outcome 1 — describe the shift from a weed-and-treatment mindset to a site-and-values mindset.",
-      "Placeholder outcome 2 — identify the kinds of site information a contractor should gather before starting.",
-      "Placeholder outcome 3 — explain why the same weed might warrant different approaches at different sites.",
+      "Explain why weed management in natural environments requires a site-first approach, not just a treatment-first approach.",
+      "Identify the kinds of site information a contractor should gather before starting work.",
+      "Explain why the same weed may require different approaches at different sites.",
     ],
     sections: [
       {
-        heading: "What is a natural environment?",
+        heading: "What counts as a natural environment",
         body: [
-          "Placeholder paragraph. Real content will describe the range of natural environments encountered in contractor work, distinguishing them from agricultural production settings.",
-          "Placeholder paragraph. Real content will introduce ecosystems, vegetation communities, habitat and ecological processes in plain English.",
+          "In this programme, \"natural environment\" is used broadly. It includes bushland, reserves, roadsides, riparian areas, coastal environments and restoration sites — settings where the aim is to protect or recover ecological values rather than to maximise production from a paddock.",
+          "Natural environments differ from agricultural settings in ways that matter to a contractor: vegetation structure and composition are usually more varied; disturbance history is often uneven; management objectives are usually about maintaining or improving ecological condition; and the consequences of a mistake can be harder to see immediately and can persist longer.",
+          "None of this makes natural-environment work more important than agricultural work — it makes it different. It changes what you should look for before you start.",
         ],
       },
       {
         heading: "Reading the site",
         body: [
-          "Placeholder paragraph. Real content will cover landform, soils, slope, drainage, water, vegetation condition and disturbance as things a contractor should observe.",
-          "Placeholder paragraph. Real content will explain why the same weed may require different approaches at different sites.",
+          "A site-first approach means gathering enough information to make an informed decision about whether, how, when and where to work. In practice that usually means checking landform and soils; water and where it goes; vegetation condition; habitat features; disturbance history; access and constraints; the site's objectives; and any regulatory context that applies.",
+          "You will not always be able to answer all of these before you start. The point is to ask, to notice what you cannot answer, and to pause and seek advice when something does not add up.",
+        ],
+      },
+      {
+        heading: "Why the same weed can need different approaches",
+        body: [
+          "The target weed is only one input into a control decision. Blackberry beside a creek with native vegetation is a different job from blackberry on a dry, accessible bank with no native understorey. Gorse mixed with native shrubs is a different job from gorse in a dense, single-species infestation. A roadside infestation may be constrained by traffic and visibility in ways a bushland reserve is not. A coastal site may have sensitive soils, wind exposure and species easily damaged by machinery or foot traffic.",
+          "The same principle applies across all of them: the site constrains the method. A contractor who knows the site can make a defensible choice. A contractor who only knows the weed is guessing. This is also why \"what did we do last time?\" is only a starting point — last time's site may have been different in ways that matter.",
         ],
       },
       {
         heading: "Your role and scope",
         body: [
-          "Placeholder paragraph. Real content will clarify the contractor's role, scope of work and communication with the client or site manager.",
+          "Contractors are not usually the only decision-makers on a natural-environment site. The client or site manager holds the objectives, the site knowledge and often the approvals. Your role is to gather and communicate the site information you can see; identify when something is outside your scope or knowledge; pause and escalate when the site presents risks or values you cannot confidently handle; and work to the site plan and the client's direction, raising concerns if what you are seeing does not match what you have been told.",
+          "This programme does not make you an ecologist, a chemical adviser or a regulator. It helps you recognise when those people need to be involved, and what to tell them.",
         ],
       },
     ],
     fieldContext: {
-      heading: "Tasmanian field context (placeholder)",
+      heading: "Tasmanian field context",
       body:
-        "Placeholder. A verified Tasmanian field example will be inserted here once curriculum is approved and the example has been checked against authoritative sources. No specific location, species or regulatory claim is made in this placeholder.",
+        "Placeholder example, structurally realistic and generic — to be replaced with a verified Tasmanian example before publication. A contractor is asked to treat a blackberry infestation on a reserve block. Before starting, they walk the site with the site manager. They notice the infestation runs along a shallow drainage line feeding into a creek below the block, that native shrubs are mixed through the outer edge, and that there is a patch of bare, eroded ground where blackberry has died back previously. The site manager mentions the block is being managed for regeneration of native understorey, and that the creek is a value they are trying to protect. The contractor's notes before work begins record the drainage line and its connection to the creek, the mixed native shrubs, the erosion patch, the site objective, and a question for the site manager about whether the creek downstream has any specific requirements. [VERIFY before publication.]",
     },
     activity: {
-      heading: "Interactive activity (placeholder)",
+      heading: "Interactive activity",
       body:
-        "Placeholder. A site-observation, sorting or decision activity will be built here. For now, use the knowledge check below to confirm the page structure works.",
+        "Placeholder text. In the built module, this section will contain an interactive site-observation or decision activity. Draft concept: the learner is shown (or described) a site and asked to identify three environmental features they would want to know more about before starting work, and one thing they would escalate to the site manager. The activity tests observation and judgement, not recall.",
     },
     knowledgeCheck: {
-      heading: "Knowledge check (placeholder questions)",
+      heading: "Knowledge check",
       note:
-        "These questions are placeholders to demonstrate the assessment component. They are not part of the approved curriculum and carry no pass/fail meaning.",
+        "These questions test reasoning rather than recall. They carry no pass/fail meaning in this draft and are pending approval with the rest of the module.",
       questions: [
         {
           id: "q1",
-          prompt: "Placeholder question 1 — which of these best describes a site-first approach?",
+          prompt:
+            "A contractor is asked to treat gorse on a site. They have treated gorse many times before. What is the most useful first step?",
           options: [
-            "Placeholder option A — apply the same treatment everywhere for consistency.",
-            "Placeholder option B — identify environmental values and constraints before deciding on an approach.",
-            "Placeholder option C — always choose the fastest method.",
+            "Apply the method that worked on the last gorse job.",
+            "Check the site, the surrounding vegetation and the site objectives before choosing a method.",
+            "Choose the fastest available method to reduce cost.",
+            "Defer to the client to specify the method.",
           ],
           correctIndex: 1,
-          feedbackCorrect: "Placeholder feedback. In real content, this would explain why site-first thinking matters.",
-          feedbackIncorrect: "Placeholder feedback. In real content, this would guide the learner toward the site-first approach.",
+          feedbackCorrect:
+            "Correct — the site constrains the method. What worked last time may not be appropriate here.",
+          feedbackIncorrect:
+            "The same weed can need different approaches at different sites. Start with the site and its objectives.",
         },
         {
           id: "q2",
-          prompt: "Placeholder question 2 — what should a contractor do when a site feature is unclear?",
+          prompt:
+            "Which of these best describes the contractor's role on a natural-environment site?",
           options: [
-            "Placeholder option A — proceed and note it afterwards.",
-            "Placeholder option B — pause and seek advice, permissions or specialist input as appropriate.",
-            "Placeholder option C — ignore it if the target weed is obvious.",
+            "To make all ecological decisions independently.",
+            "To gather site information, work to the site plan, and escalate when something is outside their scope.",
+            "To avoid communicating with the client unless there is a problem.",
+            "To apply the same treatment across all sites for consistency.",
           ],
           correctIndex: 1,
-          feedbackCorrect: "Placeholder feedback. In real content, this would reinforce pausing and escalating as appropriate.",
-          feedbackIncorrect: "Placeholder feedback. In real content, this would explain why pausing and seeking advice is preferable to proceeding.",
+          feedbackCorrect:
+            "Correct — contractors contribute site knowledge and escalate when needed.",
+          feedbackIncorrect:
+            "Contractors are not the only decision-makers. Gathering information and escalating appropriately is central to the role.",
         },
         {
           id: "q3",
-          prompt: "Placeholder question 3 — which of these is not part of this module's scope?",
+          prompt:
+            "A contractor notices native shrubs mixed through the outer edge of a blackberry infestation. What is the most appropriate response?",
           options: [
-            "Placeholder option A — understanding ecological context.",
-            "Placeholder option B — providing chemical application directions.",
-            "Placeholder option C — recognising when specialist input is needed.",
+            "Treat the whole area the same way and accept some native loss.",
+            "Note the mixed vegetation and consider how the method and timing will affect it before proceeding.",
+            "Remove the native shrubs first to simplify the job.",
+            "Ignore the shrubs — they are not the target weed.",
           ],
           correctIndex: 1,
-          feedbackCorrect: "Placeholder feedback. In real content, this would confirm that chemical directions are outside this programme's scope.",
-          feedbackIncorrect: "Placeholder feedback. In real content, this would clarify the programme's non-accredited, non-chemical-advice boundary.",
+          feedbackCorrect:
+            "Correct — non-target vegetation is part of the site information that should influence the decision.",
+          feedbackIncorrect:
+            "Native vegetation is an environmental value the contractor should protect, not an obstacle.",
+        },
+        {
+          id: "q4",
+          prompt:
+            "Which of these is the best example of a site feature that should influence a control decision?",
+          options: [
+            "The colour of the contractor's vehicle.",
+            "The presence of a drainage line feeding into a creek below the site.",
+            "The day of the week the work is scheduled.",
+            "The number of workers on the crew.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — water movement and downstream values are core site considerations.",
+          feedbackIncorrect:
+            "Look for features that affect environmental values or how the work can be done safely and appropriately.",
+        },
+        {
+          id: "q5",
+          prompt:
+            "What should a contractor do when a site feature is unclear or outside their knowledge?",
+          options: [
+            "Proceed and note it afterwards.",
+            "Pause and seek advice or escalate to the site manager before continuing.",
+            "Assume it is not important if the target weed is obvious.",
+            "Ask another contractor to make the decision.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — pausing and escalating is part of professional practice, not a failure.",
+          feedbackIncorrect:
+            "Recognising the limits of your knowledge and escalating is a core skill, not an admission of weakness.",
         },
       ],
     },
     takeaway: {
-      heading: "Practical takeaway (placeholder)",
+      heading: "Practical takeaway",
       body:
-        "Placeholder. In the real module, this section would state clearly and concisely what the learner should do differently on their next job as a result of this module.",
+        "Before your next job in a natural environment, walk the site (or review the site information) with three questions in mind: What else is here besides the target weed? What is this site being managed for? What am I not sure about? Note what you find and raise anything unclear with the site manager before you start, not after. If you can answer those three questions, you are already making better decisions than a contractor who only knows the weed.",
     },
     references: {
-      heading: "References and further guidance (placeholder)",
+      heading: "References and further guidance",
       note:
-        "No references are listed in this placeholder version. Real references will be added only after they are verified against authoritative sources and recorded in the source register (master brief §8.3).",
-      items: [],
+        "RESEARCH REQUIRED — no reference below is cited as supporting a specific statement in this module until it has been verified and recorded in docs/Source_Register.md.",
+      items: [
+        "NRE Tas (Natural Resources and Environment Tasmania) — general environmental and land management guidance. [VERIFY: specific page(s) and date checked]",
+        "Biosecurity Act 2019 (Tas) — general biosecurity duty and any relevant notification or permit requirements. [VERIFY: specific sections and current commencement status]",
+        "Weed Society of Tasmania — practitioner guidance. [VERIFY: suitability as an authoritative source for this module]",
+      ],
     },
   },
-  // The remaining modules inherit the same placeholder structure so every
-  // module URL can be tested. Real content will be added module by module.
-};
 
 /* Generate placeholder entries for modules m2–m7 from the same template. */
 const templateFor = (moduleId) => ({

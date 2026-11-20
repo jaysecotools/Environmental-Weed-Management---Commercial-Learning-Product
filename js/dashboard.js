@@ -166,7 +166,7 @@ function renderModules() {
             <span class="status-badge status-badge--${state}">${STATE_LABEL[state]}</span>
             <a
               class="module-action"
-              href="#"
+              href="module.html?id=${escapeHtml(m.id)}"
               ${disabled ? 'aria-disabled="true" tabindex="-1"' : ""}
               data-module-action="${escapeHtml(m.id)}"
             >${ACTION_LABEL[state]}</a>
@@ -174,16 +174,6 @@ function renderModules() {
         </li>`;
     })
     .join("");
-
-  // Prevent demo module links from navigating anywhere.
-  $$("[data-module-action]", list).forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (link.getAttribute("aria-disabled") === "true") return;
-      // Demonstration only — no navigation, no state change.
-    });
-  });
-}
 
 /* ---- Activity ---- */
 function renderActivity() {

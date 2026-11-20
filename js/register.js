@@ -1,42 +1,19 @@
 // js/register.js
 // Front-end validation and a clearly labelled demonstration submit.
 // No data is transmitted, stored or logged. No password is retained anywhere.
+//
+// Copy that is compliance-critical or mirrors the landing page's positioning is
+// bound from `registration` in course-config.js (see DECISIONS.md D-0006).
+// Form field labels and hints remain hard-coded here / in register.html by design.
 
 import { registration } from "./config/course-config.js";
+
+/* ---- Element refs ---- */
 const form = document.getElementById("register-form");
 const successPanel = document.getElementById("register-success");
 const yearEl = document.getElementById("year");
 
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-/* ---- Bind compliance-critical and positioning copy from config ---- */
-function bindCopy() {
-  const set = (selector, value) => {
-    const el = document.querySelector(selector);
-    if (el) el.textContent = value;
-  };
-
-  set('[data-bind="reg-eyebrow"]', registration.eyebrow);
-  set('[data-bind="reg-heading"]', registration.heading);
-  set('[data-bind="reg-lede"]', registration.lede);
-  set('[data-bind="reg-demo-strong"]', registration.demoNoticeStrong);
-  set('[data-bind="reg-demo-body"]', registration.demoNoticeBody);
-  set('[data-bind="reg-footnote"]', registration.footnote);
-  set('[data-bind="reg-success-heading"]', registration.successHeading);
-  set('[data-bind="reg-success-body"]', registration.successBody);
-  set('[data-bind="reg-success-next"]', registration.successNext);
-  set('[data-bind="reg-success-primary"]', registration.successPrimaryCta);
-  set('[data-bind="reg-success-secondary"]', registration.successSecondaryCta);
-
-  const points = document.getElementById("register-points");
-  if (points) {
-    points.innerHTML = registration.points
-      .map((p) => `<li>${escapeHtml(p)}</li>`)
-      .join("");
-  }
-}
-
-bindCopy();
 
 /* ---- Field map: field id -> validation function returning error string or "" ---- */
 const validators = {
@@ -66,6 +43,7 @@ const validators = {
 
 const errorFor = (id) => document.getElementById(`${id}-error`);
 
+/* ---- Error display ---- */
 function setError(id, message) {
   const field = document.getElementById(id);
   const errorEl = errorFor(id);
@@ -81,6 +59,7 @@ function setError(id, message) {
   }
 }
 
+/* ---- Validation ---- */
 function validateField(id) {
   const field = document.getElementById(id);
   const validator = validators[id];
@@ -106,6 +85,7 @@ function validateAll() {
 
 /* ---- Live re-validation once a field has been touched ---- */
 const touched = new Set();
+
 form?.addEventListener("blur", (e) => {
   const target = e.target;
   if (target?.id && validators[target.id]) {
@@ -145,11 +125,62 @@ function simulateRegistration() {
 
   // Clear field values from the DOM after "submit" (defence-in-depth for a demo)
   form.reset();
-  for (const id of ["first-name", "last-name", "email", "organisation", "role", "password", "confirm-password"]) {
+  for (const id of [
+    "first-name",
+    "last-name",
+    "email",
+    "organisation",
+    "role",
+    "password",
+    "confirm-password",
+  ]) {
     const el = document.getElementById(id);
     if (el) el.value = "";
   }
+  const terms = document.getElementById("accept-terms");
+  if (terms) terms.checked = false;
 
-  successPanel.focus?.();
   successPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+  successPanel.setAttribute("tabindex", "-1");
+  successPanel.focus?.();
 }
+
+/* ---- Copy binding from config (D-0006) ---- */
+function bindCopy() {
+  const set = (selector, value) => {
+    const el = document.querySelector(selector);
+    if (el) el.textContent = value;
+  };
+
+  set('[data-bind="reg-eyebrow"]', registration.eyebrow);
+  set('[data-bind="reg-heading"]', registration.heading);
+  set('[data-bind="reg-lede"]', registration.lede);
+  set('[data-bind="reg-demo-strong"]', registration.demoNoticeStrong);
+  set('[data-bind="reg-demo-body"]', registration.demoNoticeBody);
+  set('[data-bind="reg-footnote"]', registration.footnote);
+  set('[data-bind="reg-success-heading"]', registration.successHeading);
+  set('[data-bind="reg-success-body"]', registration.successBody);
+  set('[data-bind="reg-success-next"]', registration.successNext);
+  set('[data-bind="reg-success-primary"]', registration.successPrimaryCta);
+  set('[data-bind="reg-success-secondary"]', registration.successSecondaryCta);
+
+  const points = document.getElementById("register-points");
+  if (points) {
+    points.innerHTML = registration.points
+      .map((p) => `<li>${escapeHtml(p)}</li>`)
+      .join("");
+  }
+}
+
+/* ---- Utility ---- */
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+/* ---- Init ---- */
+bindCopy();

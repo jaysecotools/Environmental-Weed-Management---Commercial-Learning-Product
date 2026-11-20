@@ -69,3 +69,26 @@ AI proposals are recorded as PROPOSED until the owner confirms them.
 - **Decision:** Overall progress is computed as `(completed modules + in-progress position) / total modules`, rounded to the nearest percent. This is a UI demonstration, not an agreed academic or completion rule.
 - **Reason:** The master brief does not yet define a final progress calculation. This is a placeholder that can be replaced when completion rules are approved.
 - **Approver:** Owner (pending)
+
+## D-0009 — Module page URL scheme
+- **Date:** 2026-11-20
+- **Status:** PROPOSED
+- **Decision:** A single `module.html` renders any module via query string (`module.html?id=m1`). Content is looked up from `module-content.js` using the `id` parameter. Unknown IDs render a safe "Module not found" state.
+- **Reason:** Simple, static-hostable, easy to test, and leaves room for server-side routing later. One file to maintain instead of seven.
+- **Alternatives considered:** Separate HTML file per module (rejected — duplication); hash routing (rejected — less conventional for static hosting).
+- **Approver:** Owner (pending)
+
+## D-0010 — Module progress not persisted
+- **Date:** 2026-11-20
+- **Status:** PROPOSED
+- **Decision:** "Mark module complete" on the module page is a visual-only demonstration. It does not persist and does not update the dashboard's mock data. This keeps mock data in the dashboard as the single fictional source until persistence is decided (D-0008).
+- **Reason:** Avoids inventing a persistence model before the real auth/DB decision (master brief §7, §17). Keeps the module page a faithful structural template.
+- **Risk:** Learners testing the module shell will see a completion confirmation that is not reflected anywhere else. This is clearly stated on the page and in the README.
+- **Approver:** Owner (pending)
+
+## D-0011 — Module content is a placeholder file
+- **Date:** 2026-11-20
+- **Status:** PROPOSED
+- **Decision:** All module content lives in `js/config/module-content.js`, separate from `course-config.js`, so it can be replaced incrementally, module by module, as content is approved. Every string is placeholder and no factual claims are made.
+- **Reason:** Matches master brief §7.4 (separate course content from application logic) and the Stage 2 gate (curriculum approval). Placeholder content must not be mistaken for curriculum.
+- **Approver:** Owner (pending)

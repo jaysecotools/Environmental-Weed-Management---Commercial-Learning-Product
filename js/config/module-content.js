@@ -163,7 +163,7 @@ export const moduleContent = {
       ],
     },
   },
-},
+};
   
 /* Generate placeholder entries for modules m2–m7 from the same template. */
 const templateFor = (moduleId) => ({

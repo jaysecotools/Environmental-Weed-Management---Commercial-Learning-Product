@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Module — Environmental Weed Management</title>
+    <meta
+      name="description"
+      content="Module page prototype for the Environmental Weed Management professional development programme. Placeholder content only."
+    />
+    <meta name="theme-color" content="#1f3a2e" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/module.css" />
+    <script type="module" src="js/module.js" defer></script>
+  </head>
+  <body class="module-body">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="app-header" role="banner">
+      <div class="container app-header-inner">
+        <a class="brand" href="index.html" aria-label="Environmental Weed Management home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+              <path d="M6 26c4-9 9-15 20-20-1 11-7 17-15 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 26c3-2 6-3 9-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-title">Environmental Weed Management</span>
+            <span class="brand-sub">Module (prototype)</span>
+          </span>
+        </a>
+        <a class="btn btn-ghost btn-sm" href="dashboard.html" data-bind="back-dashboard">Back to dashboard</a>
+      </div>
+    </header>
+
+    <div class="provisional-banner" role="note">
+      <div class="container" data-bind="provisional-banner"></div>
+    </div>
+
+    <main id="main" class="app-main">
+      <div class="container module-container">
+        <nav class="module-breadcrumb" aria-label="Breadcrumb">
+          <a href="dashboard.html">Dashboard</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page" data-bind="module-breadcrumb">Module</span>
+        </nav>
+
+        <header class="module-head">
+          <p class="eyebrow" data-bind="module-order">Module</p>
+          <h1 data-bind="module-title">Module title</h1>
+          <p class="module-summary" data-bind="module-summary"></p>
+          <p class="module-duration" data-bind="module-duration"></p>
+        </header>
+
+        <p class="callout callout--neutral" role="note" data-bind="not-advice"></p>
+
+        <section class="module-section" aria-labelledby="outcomes-title">
+          <h2 id="outcomes-title">Learning outcomes (placeholder)</h2>
+          <ul class="outcomes-list" id="outcomes-list">
+            <!-- populated by js/module.js -->
+          </ul>
+        </section>
+
+        <section class="module-section" aria-labelledby="content-title">
+          <h2 id="content-title">Core learning (placeholder)</h2>
+          <div id="content-sections"></div>
+        </section>
+
+        <section class="module-section module-section--context" aria-labelledby="field-title">
+          <h2 id="field-title" data-bind="field-heading">Tasmanian field context</h2>
+          <p data-bind="field-body"></p>
+        </section>
+
+        <section class="module-section" aria-labelledby="activity-title">
+          <h2 id="activity-title" data-bind="activity-heading">Interactive activity</h2>
+          <p data-bind="activity-body"></p>
+        </section>
+
+        <section class="module-section" aria-labelledby="quiz-title">
+          <h2 id="quiz-title" data-bind="quiz-heading">Knowledge check</h2>
+          <p class="section-note" data-bind="quiz-note"></p>
+          <div id="quiz-container" class="quiz"></div>
+        </section>
+
+        <section class="module-section module-section--takeaway" aria-labelledby="takeaway-title">
+          <h2 id="takeaway-title" data-bind="takeaway-heading">Practical takeaway</h2>
+          <p data-bind="takeaway-body"></p>
+        </section>
+
+        <section class="module-section" aria-labelledby="refs-title">
+          <h2 id="refs-title" data-bind="refs-heading">References and further guidance</h2>
+          <p class="section-note" data-bind="refs-note"></p>
+          <ul class="refs-list" id="refs-list"></ul>
+        </section>
+
+        <section class="module-section module-complete" aria-labelledby="complete-title">
+          <h2 id="complete-title">Complete this module (demonstration)</h2>
+          <p class="section-note">
+            Completing a module here is a demonstration only. Nothing is saved and it does not
+            confer any qualification, licence or chemical-use authorisation.
+          </p>
+          <button class="btn btn-primary" type="button" id="complete-button" data-bind="complete-cta">
+            Mark module complete (demonstration)
+          </button>
+          <p class="complete-status" id="complete-status" role="status" aria-live="polite" hidden></p>
+        </section>
+
+        <nav class="module-nav" aria-label="Module navigation">
+          <a class="btn btn-ghost" href="#" id="prev-link" data-bind="prev-label">Previous module</a>
+          <a class="btn btn-ghost" href="#" id="next-link" data-bind="next-label">Next module</a>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <p class="footer-title">Environmental Weed Management</p>
+          <p class="footer-note">Non-accredited professional development. Not a nationally recognised qualification.</p>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> — Prototype. Placeholder module content.</p>
+      </div>
+    </footer>
+  </body>
+</html>

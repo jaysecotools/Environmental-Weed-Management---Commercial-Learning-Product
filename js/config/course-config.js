@@ -153,13 +153,32 @@ export const completion = {
     "Non-accredited professional development. Not a nationally recognised qualification or Statement of Attainment.",
 };
 
-// Registration copy (provisional). Kept in config so wording is easy to update.
+// Registration copy (provisional). Kept in config so compliance-critical
+// wording is easy to keep consistent with the landing page.
+// Field labels and hints remain hard-coded in register.html (stable, unlikely to change).
 export const registration = {
-  demoNotice:
-    "Demonstration only. This prototype registration page does not send or store any information, and no passwords are collected or saved.",
+  eyebrow: "Register your interest",
+  heading: "Join the pilot",
+  lede:
+    "Register your interest in the Environmental Weed Management professional development programme. We'll use this to gauge demand and invite a small group of pilot learners.",
+  demoNoticeStrong: "Demonstration only.",
+  demoNoticeBody:
+    "This is a prototype registration page. No information is sent anywhere or stored. Passwords are not collected or saved. You can use fictitious details.",
+  points: [
+    "Non-accredited professional development",
+    "Approximately 3–4 hours of online learning",
+    "Optional facilitated workshop",
+    "Certificate of Completion for successful participants",
+  ],
+  footnote:
+    "This is a demonstration. No account is created, nothing is transmitted or stored, and no passwords are saved. Your test entries disappear when you leave the page.",
   successHeading: "Demonstration complete",
   successBody:
-    "This is where a real registration would be created. Nothing was sent or stored.",
+    "Thanks — this is where a real registration would be created. Nothing was sent or stored.",
+  successNext:
+    "In a live product, the next step would be to sign in to the learner dashboard.",
+  successPrimaryCta: "Continue to demo dashboard",
+  successSecondaryCta: "Back to home",
 };
 
 // Mock learner and progress — DEMONSTRATION ONLY.

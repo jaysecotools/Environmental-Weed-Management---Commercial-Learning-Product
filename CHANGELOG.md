@@ -19,3 +19,21 @@
 - Dashboard.
 - PWA manifest and service worker.
 - Any backend, auth or persistence.
+
+## [Unreleased] — Stage 2: Registration page (demonstration)
+### Added
+- `register.html` — registration page with header, intro, demonstration notice, and form.
+- `css/pages/register.css`.
+- `js/register.js` — client-side validation and isolated `simulateRegistration()` demonstration handler.
+- `registration` object in `js/config/course-config.js` (copy not yet wired — see D-0006).
+
+### Notes
+- Demonstration only: no data transmitted, stored or logged; passwords cleared from the DOM after submit.
+- Form is accessible: labels, `aria-invalid`, `role="alert"` error messages, focus management.
+- Curriculum/programme content remains provisional.
+- No real backend, auth or persistence added.
+
+### Not yet built
+- Dashboard (`dashboard.html`).
+- PWA manifest and service worker.
+- Real auth, persistence or backend.

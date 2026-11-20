@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My learning — Environmental Weed Management</title>
+    <meta
+      name="description"
+      content="Learner dashboard prototype for the Environmental Weed Management professional development programme. Demonstration data only."
+    />
+    <meta name="theme-color" content="#1f3a2e" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/dashboard.css" />
+    <script type="module" src="js/dashboard.js" defer></script>
+  </head>
+  <body class="dashboard-body">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="app-header" role="banner">
+      <div class="container app-header-inner">
+        <a class="brand" href="index.html" aria-label="Environmental Weed Management home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+              <path d="M6 26c4-9 9-15 20-20-1 11-7 17-15 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 26c3-2 6-3 9-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-title">Environmental Weed Management</span>
+            <span class="brand-sub">Learner dashboard (prototype)</span>
+          </span>
+        </a>
+
+        <div class="app-header-actions">
+          <button class="btn btn-ghost btn-sm" type="button" id="profile-button" aria-expanded="false" aria-controls="profile-panel">
+            <span class="avatar" aria-hidden="true" id="avatar-initials">DL</span>
+            <span id="header-display-name">Demo Learner</span>
+          </button>
+          <a class="btn btn-ghost btn-sm" href="index.html" id="logout-link">Log out</a>
+        </div>
+      </div>
+
+      <aside id="profile-panel" class="profile-panel" hidden aria-labelledby="profile-panel-heading">
+        <div class="container">
+          <h2 id="profile-panel-heading">Learner profile</h2>
+          <dl class="profile-dl">
+            <div><dt>Name</dt><dd id="profile-name">Demo Learner</dd></div>
+            <div><dt>Email</dt><dd id="profile-email">demo.learner@example.com</dd></div>
+            <div><dt>Organisation</dt><dd id="profile-organisation">—</dd></div>
+            <div><dt>Role</dt><dd id="profile-role">—</dd></div>
+            <div><dt>Enrolled</dt><dd id="profile-enrolled">—</dd></div>
+          </dl>
+          <p class="profile-note">
+            Demonstration profile. No real learner data is stored or transmitted.
+          </p>
+        </div>
+      </aside>
+    </header>
+
+    <main id="main" class="app-main">
+      <div class="container">
+        <section class="welcome" aria-labelledby="welcome-title">
+          <p class="eyebrow">Welcome back</p>
+          <h1 id="welcome-title">Hello, <span id="welcome-name">Demo</span>.</h1>
+          <p class="welcome-lede">
+            Continue where you left off, or review a completed module.
+            This dashboard uses demonstration data only.
+          </p>
+        </section>
+
+        <section class="overview" aria-labelledby="overview-title">
+          <h2 id="overview-title" class="visually-hidden">Course progress overview</h2>
+          <div class="overview-card">
+            <div class="progress-summary">
+              <p class="progress-label">Overall course progress</p>
+              <p class="progress-value" id="overall-progress-value">0%</p>
+              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="overall-progress-value" id="overall-progress-bar">
+                <span class="progress-fill" style="width: 0%"></span>
+              </div>
+              <p class="progress-detail" id="overall-progress-detail">—</p>
+            </div>
+
+            <div class="stat">
+              <p class="stat-label">Modules completed</p>
+              <p class="stat-value" id="stat-completed">0</p>
+            </div>
+            <div class="stat">
+              <p class="stat-label">Knowledge checks passed</p>
+              <p class="stat-value" id="stat-checks">0</p>
+            </div>
+            <div class="stat">
+              <p class="stat-label">Estimated time remaining</p>
+              <p class="stat-value" id="stat-time">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="modules-title">
+          <div class="section-bar">
+            <h2 id="modules-title">Modules</h2>
+            <p class="section-note">Provisional curriculum. Module names and details may change.</p>
+          </div>
+          <ol class="module-list" id="module-list" aria-label="Course modules">
+            <!-- populated by js/dashboard.js -->
+          </ol>
+        </section>
+
+        <section class="two-col" aria-label="Activity and certificate">
+          <div class="panel" aria-labelledby="activity-title">
+            <h2 id="activity-title">Recent activity</h2>
+            <ul class="activity-list" id="activity-list">
+              <!-- populated by js/dashboard.js -->
+            </ul>
+          </div>
+
+          <div class="panel" aria-labelledby="certificate-title">
+            <h2 id="certificate-title">Certificate of completion</h2>
+            <div id="certificate-block">
+              <!-- populated by js/dashboard.js -->
+            </div>
+          </div>
+        </section>
+
+        <p class="prototype-note" role="note">
+          Prototype notice: this dashboard shows demonstration data only. It is not
+          authenticated and must not be used to record real learner information.
+          Completing a module here does not confer any qualification, licence or
+          chemical-use authorisation. The programme is non-accredited professional
+          development.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <p class="footer-title">Environmental Weed Management</p>
+          <p class="footer-note">Non-accredited professional development. Not a nationally recognised qualification.</p>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> — Prototype. Demonstration data only.</p>
+      </div>
+    </footer>
+  </body>
+</html>

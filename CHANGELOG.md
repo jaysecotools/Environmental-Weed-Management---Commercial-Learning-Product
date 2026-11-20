@@ -37,3 +37,22 @@
 - Dashboard (`dashboard.html`).
 - PWA manifest and service worker.
 - Real auth, persistence or backend.
+
+## [Unreleased] — Stage 3: Learner dashboard (mock)
+### Added
+- `dashboard.html` — learner dashboard with sticky app header, profile panel, welcome, progress overview, module list, recent activity, certificate placeholder, prototype notice.
+- `css/pages/dashboard.css`.
+- `js/dashboard.js` — renders dashboard from mock data; no auth, no persistence.
+- `mockLearner`, `mockProgress`, `mockActivity` exports in `js/config/course-config.js`.
+
+### Notes
+- Demonstration data only; dashboard is openly reachable in prototype (see D-0007).
+- No data written to or read from localStorage/sessionStorage/cookies.
+- Certificate is a placeholder; no issuance logic.
+- Progress calculation is a demonstration model (see D-0008).
+- Programme remains non-accredited; page states this explicitly.
+
+### Not yet built
+- PWA manifest and service worker.
+- Real auth, persistence, backend, organisation accounts, reporting.
+- Final assessment and certificate issuance.

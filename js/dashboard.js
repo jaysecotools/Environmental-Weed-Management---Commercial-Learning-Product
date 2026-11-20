@@ -174,6 +174,7 @@ function renderModules() {
         </li>`;
     })
     .join("");
+}
 
 /* ---- Activity ---- */
 function renderActivity() {

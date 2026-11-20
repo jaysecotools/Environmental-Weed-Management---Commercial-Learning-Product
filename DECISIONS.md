@@ -46,11 +46,13 @@ AI proposals are recorded as PROPOSED until the owner confirms them.
 - **Impact:** `simulateRegistration()` is a single, clearly isolated function so a real backend can replace it without touching markup.
 - **Approver:** Owner (pending)
 
-## D-0006 — Registration copy kept as bindings vs hard-coded (OPEN)
+## D-0006 — Registration copy binding scope
 - **Date:** 2026-11-20
-- **Status:** OPEN QUESTION
-- **Decision needed:** Whether to move the demonstration notice, success heading and success body into `course-config.js` (consistent with D-0002) or keep them inline in `register.html` (simpler for one-off pages).
-- **Current state:** Inline in `register.html`; `registration` object added to config but not yet wired.
+- **Status:** CONFIRMED
+- **Decision:** Bind compliance-critical and positioning copy (eyebrow, heading, lede, demonstration notice, points list, footnote, success panel text and CTAs) from `registration` in `course-config.js`. Leave form field labels and hints hard-coded in `register.html`, as they are stable and unlikely to change.
+- **Reason:** Keeps the "no data collected" and "non-accredited" statements consistent with the landing page, and makes future revision a one-line config change. Field labels are low-value to bind and add noise to the config.
+- **Alternatives considered:** Full binding of every string (rejected as over-engineering for this stage); hard-coding all copy (rejected — risks drift with landing page and master brief positioning).
+- **Impact:** Minor. `register.js` imports `registration` and binds strings at load. The `registration` export now covers every compliance-relevant string.
 - **Approver:** Owner
 
 ## D-0007 — Dashboard is mock-data only and openly reachable

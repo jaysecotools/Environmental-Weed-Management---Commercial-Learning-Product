@@ -40,24 +40,21 @@
       <section class="register-shell" aria-labelledby="register-title">
         <div class="container register-container">
           <div class="register-intro">
-            <p class="eyebrow">Register your interest</p>
-            <h1 id="register-title">Join the pilot</h1>
-            <p class="register-lede">
+            <p class="eyebrow" data-bind="reg-eyebrow">Register your interest</p>
+            <h1 id="register-title" data-bind="reg-heading">Join the pilot</h1>
+            <p class="register-lede" data-bind="reg-lede">
               Register your interest in the Environmental Weed Management professional development
               programme. We'll use this to gauge demand and invite a small group of pilot learners.
             </p>
 
             <aside class="callout callout--demo" role="note" aria-label="Demonstration notice">
-              <strong>Demonstration only.</strong>
-              This is a prototype registration page. No information is sent anywhere or stored.
-              Passwords are not collected or saved. You can use fictitious details.
+              <strong data-bind="reg-demo-strong">Demonstration only.</strong>
+              <span data-bind="reg-demo-body">This is a prototype registration page. No information is sent anywhere or stored.
+              Passwords are not collected or saved. You can use fictitious details.</span>
             </aside>
 
-            <ul class="register-points">
-              <li>Non-accredited professional development</li>
-              <li>Approximately 3–4 hours of online learning</li>
-              <li>Optional facilitated workshop</li>
-              <li>Certificate of Completion for successful participants</li>
+            <ul class="register-points" id="register-points">
+              <!-- populated by js/register.js -->
             </ul>
           </div>
 
@@ -140,23 +137,23 @@
 
               <button class="btn btn-primary btn-lg" type="submit">Create account</button>
 
-              <p class="form-footnote">
+              <p class="form-footnote" data-bind="reg-footnote">
                 This is a demonstration. No account is created, nothing is transmitted or stored,
                 and no passwords are saved. Your test entries disappear when you leave the page.
               </p>
             </form>
 
             <div id="register-success" class="register-success" role="status" aria-live="polite" hidden>
-              <h2>Demonstration complete</h2>
-              <p>
+              <h2 data-bind="reg-success-heading">Demonstration complete</h2>
+              <p data-bind="reg-success-body">
                 Thanks — this is where a real registration would be created. Nothing was sent or stored.
               </p>
-              <p>
+              <p data-bind="reg-success-next">
                 In a live product, the next step would be to sign in to the learner dashboard.
               </p>
               <div class="register-success-actions">
-                <a class="btn btn-primary" href="dashboard.html">Continue to demo dashboard</a>
-                <a class="btn btn-ghost" href="index.html">Back to home</a>
+                <a class="btn btn-primary" href="dashboard.html" data-bind="reg-success-primary">Continue to demo dashboard</a>
+                <a class="btn btn-ghost" href="index.html" data-bind="reg-success-secondary">Back to home</a>
               </div>
             </div>
           </div>

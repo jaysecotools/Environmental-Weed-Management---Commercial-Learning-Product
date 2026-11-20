@@ -2,11 +2,41 @@
 // Front-end validation and a clearly labelled demonstration submit.
 // No data is transmitted, stored or logged. No password is retained anywhere.
 
+import { registration } from "./config/course-config.js";
 const form = document.getElementById("register-form");
 const successPanel = document.getElementById("register-success");
 const yearEl = document.getElementById("year");
 
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* ---- Bind compliance-critical and positioning copy from config ---- */
+function bindCopy() {
+  const set = (selector, value) => {
+    const el = document.querySelector(selector);
+    if (el) el.textContent = value;
+  };
+
+  set('[data-bind="reg-eyebrow"]', registration.eyebrow);
+  set('[data-bind="reg-heading"]', registration.heading);
+  set('[data-bind="reg-lede"]', registration.lede);
+  set('[data-bind="reg-demo-strong"]', registration.demoNoticeStrong);
+  set('[data-bind="reg-demo-body"]', registration.demoNoticeBody);
+  set('[data-bind="reg-footnote"]', registration.footnote);
+  set('[data-bind="reg-success-heading"]', registration.successHeading);
+  set('[data-bind="reg-success-body"]', registration.successBody);
+  set('[data-bind="reg-success-next"]', registration.successNext);
+  set('[data-bind="reg-success-primary"]', registration.successPrimaryCta);
+  set('[data-bind="reg-success-secondary"]', registration.successSecondaryCta);
+
+  const points = document.getElementById("register-points");
+  if (points) {
+    points.innerHTML = registration.points
+      .map((p) => `<li>${escapeHtml(p)}</li>`)
+      .join("");
+  }
+}
+
+bindCopy();
 
 /* ---- Field map: field id -> validation function returning error string or "" ---- */
 const validators = {

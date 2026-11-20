@@ -52,3 +52,18 @@ AI proposals are recorded as PROPOSED until the owner confirms them.
 - **Decision needed:** Whether to move the demonstration notice, success heading and success body into `course-config.js` (consistent with D-0002) or keep them inline in `register.html` (simpler for one-off pages).
 - **Current state:** Inline in `register.html`; `registration` object added to config but not yet wired.
 - **Approver:** Owner
+
+## D-0007 — Dashboard is mock-data only and openly reachable
+- **Date:** 2026-11-20
+- **Status:** PROPOSED (pending owner confirmation; supersedes the prototype-limitation note in D-0003)
+- **Decision:** `dashboard.html` renders a fictional learner (`mockLearner`), fictional progress (`mockProgress`) and fictional activity (`mockActivity`) from `course-config.js`. It is reachable without authentication. No data is written or read from storage. A visible prototype notice on the page and a note in the README explain the limitation.
+- **Reason:** Real authentication and learner records are out of scope for this stage (master brief §7.4). A safe, clearly-flagged mock allows UX validation without prematurely committing to an auth/DB provider.
+- **Risk:** The page must not be deployed to a public production domain while openly reachable. This will be re-flagged before any deployment. The mock data must never be replaced with real learner data until auth and privacy review are complete.
+- **Approver:** Owner (pending)
+
+## D-0008 — Progress model (demonstration)
+- **Date:** 2026-11-20
+- **Status:** PROPOSED
+- **Decision:** Overall progress is computed as `(completed modules + in-progress position) / total modules`, rounded to the nearest percent. This is a UI demonstration, not an agreed academic or completion rule.
+- **Reason:** The master brief does not yet define a final progress calculation. This is a placeholder that can be replaced when completion rules are approved.
+- **Approver:** Owner (pending)

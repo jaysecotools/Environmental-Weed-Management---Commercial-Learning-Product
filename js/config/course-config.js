@@ -152,3 +152,12 @@ export const completion = {
   disclaimer:
     "Non-accredited professional development. Not a nationally recognised qualification or Statement of Attainment.",
 };
+
+// Registration copy (provisional). Kept in config so wording is easy to update.
+export const registration = {
+  demoNotice:
+    "Demonstration only. This prototype registration page does not send or store any information, and no passwords are collected or saved.",
+  successHeading: "Demonstration complete",
+  successBody:
+    "This is where a real registration would be created. Nothing was sent or stored.",
+};

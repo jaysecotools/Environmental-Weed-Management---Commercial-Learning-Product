@@ -328,9 +328,184 @@ export const moduleContent = {
       ],
     },
   },
+
+  m3: {
+    // DRAFT content — pending owner review and approval.
+    // Uses only examples named in the master brief. No verified Tasmanian
+    // specific claims; items requiring verification are marked [VERIFY] in
+    // the corresponding docs/Module_03_Content.md.
+    //
+    // CHEMICAL-USE BOUNDARY: this module discusses herbicides only as one of
+    // several broad approaches. It contains no product names, rates, mixtures,
+    // application methods, withholding periods or label paraphrases. See
+    // PROJECT_BRIEF.md §2.3 and §4 (Module 3, "Important").
+    learningOutcomes: [
+      "Explain integrated weed management as a planned combination of methods, not a single treatment.",
+      "Identify the broad categories of control approach and what each is suited to.",
+      "Describe the factors that should influence method selection on a natural-environment site.",
+      "Explain why timing, staged treatment and follow-up capacity shape a defensible decision.",
+      "Recognise the boundary between method-selection reasoning and decisions that require specialist or authorised input.",
+    ],
+    sections: [
+      {
+        heading: "Integrated weed management",
+        body: [
+          "Integrated weed management means combining methods in a planned way, rather than relying on a single approach. The point is not to use every method available — it is to choose a combination that fits the species, the site, the objectives and what can realistically be followed up.",
+          "A planned combination usually does three things: addresses the plant at more than one point in its life cycle (for example, reducing seed set now, and reducing the seed bank or regrowth later); uses the site's constraints as design inputs (access, terrain, water, non-target vegetation, weather, and what the site manager can support); and builds in follow-up, because a single treatment rarely ends an infestation. [VERIFY: link to a Tasmanian or Australian integrated weed management reference, once identified.]",
+        ],
+      },
+      {
+        heading: "The broad approaches",
+        body: [
+          "The brief names six broad categories. They are not a hierarchy — they are options, and the right one (or combination) depends on the situation: manual (hand-pulling, cutting, digging, and similar — suited to small infestations, sensitive sites, or situations where machinery or chemicals are not appropriate); mechanical (machinery-based removal, slashing, mulching, cultivation — suited to larger or more accessible infestations, but with greater risk of soil disturbance, non-target damage and spread); chemical (the use of registered herbicides, selected with specialist input and applied in accordance with the product label and current authorisations — this course does not provide chemical directions); biological (where an approved biological control agent is relevant and available — not a general-purpose option, its use depends on approval, suitability and site context); cultural or site management (grazing, fire, shading, competition from desirable vegetation, and other site-level practices that change conditions for the weed); and prevention (hygiene, early detection, and stopping spread before it starts, covered in more depth in Module 5). [VERIFY: link to an authoritative Tasmanian or Australian source describing these approaches for contractors, once identified.]",
+        ],
+      },
+      {
+        heading: "Factors that influence method selection",
+        body: [
+          "Method selection is not a free choice. It is constrained by the species, the site, the objectives, the risks and what can be followed up. A contractor should be able to identify the factors that matter on a given site: species and growth stage; infestation size and pattern; access and terrain; weather and season; soil and water; non-target vegetation and fauna habitat; people and safety; follow-up capacity; objectives and success criteria; and regulatory and approval context. [VERIFY: link to NRE Tas guidance on method selection or site assessment for contractors, once identified.]",
+          "You will not always be able to resolve every factor before starting. The point is to notice which ones are unresolved, and to pause and seek advice when an unresolved factor could change the decision.",
+        ],
+      },
+      {
+        heading: "Timing and staged treatment",
+        body: [
+          "When a treatment is done can matter as much as what is done. Timing affects effectiveness (some methods work best at particular growth stages); non-target risk (some methods are more damaging to native vegetation at certain times); fauna (nesting, breeding and seasonal movement can make some times unsuitable); spread risk (treating after seed set may spread seed rather than reduce it); and follow-up (the timing of the first treatment shapes when follow-up is needed and what it should be).",
+          "Staged treatment means planning more than one pass, at intervals that reflect the weed's biology and the site's capacity. It is usually more realistic than a single-event approach, and it is often the only way to reduce a seed bank or a persistent infestation over time.",
+        ],
+      },
+      {
+        heading: "The role and limits of herbicides",
+        body: [
+          "Herbicides are one option among several. Where they are considered, the decision about which product, at what rate, in what mixture, and by what application method is not made in this course. Those decisions require appropriately trained and authorised people; must follow the product label and safety data sheet; must comply with permits, legislation and regulator directions; and must be made with site-specific information and, where relevant, specialist advice.",
+          "This course explains that herbicides are one of the broad approaches and that they are selected with specialist input. It does not provide product names, rates, mixtures, application methods, withholding periods or label paraphrases. If you need those, they come from the label, the relevant training, and authorised advice — not from a general course. [VERIFY: link to the authoritative source for chemical-use training and label requirements in Tasmania, once identified — likely ChemCERT and the relevant Tasmanian regulator.]",
+        ],
+      },
+      {
+        heading: "When to pause and seek specialist input",
+        body: [
+          "Method selection is a decision that sometimes goes beyond the contractor's scope. Pause and seek input when: the species, its life cycle or its response to a method is uncertain; the site contains values (species, habitat, cultural, water) that could be affected in ways you cannot confidently assess; the proposed method requires approvals, permits or specialist authorisation; the objectives or success criteria are unclear; or the follow-up capacity is uncertain and the treatment could make things worse without it.",
+          "This is consistent with the contractor's role described in Module 1, and with the 'when to confirm identification' section in Module 2. It is professional practice, not a gap in competence.",
+        ],
+      },
+    ],
+    fieldContext: {
+      heading: "Tasmanian field context",
+      body:
+        "Placeholder example, structurally realistic and generic — to be replaced with a verified Tasmanian example before publication. A contractor is asked to plan control for a blackberry infestation along a riparian edge on a bushland reserve. The site manager's objective is to protect native understorey and the creek, not to eradicate blackberry in a single season. Walking the site, the contractor notes that the infestation is dense in the core and scattered along the edge with native shrubs mixed through the outer zone; that the ground near the creek is soft and erosion-prone; that access for machinery is limited by the creek and by the native vegetation; that the site manager can support follow-up visits but not a large machinery operation; and that the site is being managed for regeneration, so non-target damage matters as much as blackberry kill. The contractor's notes before the method conversation record these features, and flag that the choice of approach (or combination) needs to reflect them. The contractor does not select a method unilaterally — they bring the site information to the site manager and, where relevant, to a specialist, and the decision is made together. [VERIFY before publication.]",
+    },
+    activity: {
+      heading: "Interactive activity",
+      body:
+        "Placeholder text. In the built module, this section will contain an interactive method-selection or decision activity. Draft concept: the learner is shown or described a site with a target weed and a set of site factors, and asked to identify which factors are most important, propose a combination of broad approaches that fits the site and objectives, and identify what information is missing or needs specialist input. A second concept compares two sites with the same weed but different constraints (for example, a riparian site and a dry accessible bank), and asks how the method combination would differ and why. The activities test reasoning about method selection, not recall of products or methods.",
+    },
+    knowledgeCheck: {
+      heading: "Knowledge check",
+      note:
+        "These questions test reasoning rather than recall. They carry no pass/fail meaning in this draft and are pending approval with the rest of the module.",
+      questions: [
+        {
+          id: "q1",
+          prompt:
+            "Which statement best describes integrated weed management?",
+          options: [
+            "Using every available method on every site.",
+            "A planned combination of methods chosen to fit the species, site, objectives and follow-up capacity.",
+            "Always using the fastest method to reduce cost.",
+            "Replacing chemical methods with manual methods everywhere.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — integration is about a planned combination that fits the situation, not about using everything.",
+          feedbackIncorrect:
+            "Integration is a planning approach, not a fixed rule about which methods to use.",
+        },
+        {
+          id: "q2",
+          prompt:
+            "A contractor is planning control on a riparian site. Which factor is most likely to constrain the choice of method?",
+          options: [
+            "The colour of the contractor's vehicle.",
+            "The proximity of the site to a creek and the risk of erosion and runoff.",
+            "The day of the week the work is scheduled.",
+            "The number of workers on the crew.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — water, erosion and runoff are core site constraints on a riparian site.",
+          feedbackIncorrect:
+            "Look for factors that affect environmental values, safety or feasibility.",
+        },
+        {
+          id: "q3",
+          prompt:
+            "Why does timing matter in method selection?",
+          options: [
+            "It only matters for chemical methods.",
+            "It affects effectiveness, non-target risk, fauna, spread risk and follow-up.",
+            "It only matters for large infestations.",
+            "It does not matter as long as the method is correct.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — timing affects effectiveness, risk and follow-up, not just one of them.",
+          feedbackIncorrect:
+            "Timing is a core design input, not an afterthought.",
+        },
+        {
+          id: "q4",
+          prompt:
+            "Which statement best describes the role of herbicides in this course?",
+          options: [
+            "The course provides product names and rates for common weeds.",
+            "Herbicides are one of several broad approaches; product, rate, mixture and application decisions are made by appropriately trained and authorised people, in accordance with the label and relevant approvals.",
+            "Herbicides are not mentioned in this course at all.",
+            "Herbicides are always the first choice on natural-environment sites.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — herbicides are one option, and the specific decisions sit outside this course.",
+          feedbackIncorrect:
+            "The course is explicit that product-specific chemical decisions are outside its scope and require specialist and authorised input.",
+        },
+        {
+          id: "q5",
+          prompt:
+            "When should a contractor pause and seek specialist input on method selection?",
+          options: [
+            "Only when the client asks them to.",
+            "When the species, site values, approvals, objectives or follow-up capacity are uncertain enough that a wrong decision could cause avoidable harm.",
+            "Never — method selection is always within the contractor's scope.",
+            "Only when chemicals are involved.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — pausing when uncertainty could cause harm is professional practice.",
+          feedbackIncorrect:
+            "Method selection sometimes goes beyond the contractor's scope; recognising that is a core skill.",
+        },
+      ],
+    },
+    takeaway: {
+      heading: "Practical takeaway",
+      body:
+        "Before your next method-selection conversation, prepare three things. The site factors that constrain the choice — species and growth stage, infestation pattern, access and terrain, weather and season, soil and water, non-target vegetation and fauna, safety, follow-up capacity, objectives and approvals. A proposed combination, not a single method — at least two approaches that fit the site and objectives, and why they fit. The unresolved questions — what you cannot confidently answer, and who should be asked: the site manager, a specialist, or an authorised chemical adviser. If you can bring those three things to the conversation, you are contributing to a defensible method decision, not just executing one.",
+    },
+    references: {
+      heading: "References and further guidance",
+      note:
+        "RESEARCH REQUIRED — no reference below is cited as supporting a specific statement in this module until it has been verified and recorded in docs/Source_Register.md.",
+      items: [
+        "NRE Tas (Natural Resources and Environment Tasmania) — method selection, site assessment or integrated weed management guidance for contractors. [VERIFY: specific page(s) and date checked]",
+        "Biosecurity Act 2019 (Tas) — any relevant permit, approval or notification requirements for control methods. [VERIFY: specific sections and current commencement status]",
+        "Weed Society of Tasmania — practitioner guidance on integrated weed management. [VERIFY: suitability as an authoritative source for this module]",
+        "ChemCERT or the relevant Tasmanian chemical-use training authority — for the boundary between method-selection reasoning and chemical-use decisions. [VERIFY: correct body, current name and source]",
+      ],
+    },
+  },
 };
 
-/* Generate placeholder entries for modules m3–m7 from the same template. */
+/* Generate placeholder entries for modules m4–m7 from the same template. */
 const templateFor = (moduleId) => ({
   learningOutcomes: [
     `Placeholder outcome for ${moduleId} — outcome 1.`,
@@ -400,7 +575,7 @@ const templateFor = (moduleId) => ({
   },
 });
 
-for (const id of ["m3", "m4", "m5", "m6", "m7"]) {
+for (const id of ["m4", "m5", "m6", "m7"]) {
   if (!moduleContent[id]) moduleContent[id] = templateFor(id);
 }
 

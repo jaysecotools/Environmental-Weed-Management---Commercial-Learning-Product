@@ -81,7 +81,8 @@ Environmental-Weed-Management/
 │
 └── js/
     ├── config/
-    │   └── course-config.js    Single source of truth for provisional content and mock data
+    │   ├── course-config.js    Programme-level content and mock data
+    │   └── module-content.js   Per-module curriculum content (M1–M3 draft; M4–M7 placeholder)
     ├── landing.js              Renders landing page from config
     ├── register.js             Registration validation and demonstration submit
     └── dashboard.js            Renders dashboard from mock data
@@ -92,6 +93,7 @@ Environmental-Weed-Management/
 ## Configuration
 
 `js/config/course-config.js` is the single source of truth for provisional content. Editing it updates the landing page and dashboard without touching HTML or page-level JS.
+**Note:** `js/config/module-content.js` is a separate content file that holds per-module curriculum content (currently M1–M3 draft, M4–M7 placeholder). It is not the same as `course-config.js`. `course-config.js` holds programme-level copy and mock data; `module-content.js` holds the module bodies that `module.html` renders via `?id=`.
 
 Exports:
 
@@ -243,6 +245,12 @@ For the full project context, boundaries and staged plan, see `PROJECT_BRIEF.md`
 ## Licence
 
 Prototype. Not for public distribution. Content ownership and licensing to be confirmed per master brief §9.
+
+- **D-0006 fix** — wire the `registration` config object into `register.html` (or remove it). Small.
+- **`DECISIONS.md` status update** — move D-0005, D-0007, D-0008 from PROPOSED to CONFIRMED (assuming you're happy with them).
+- **`CHANGELOG.md` entry** — add a "Documentation" entry recording the README update.
+
+Otherwise, tell me which stage you'd like next (tidy pass, module shell/template, or PWA), and I'll pick up from there.
 
 - **D-0006 fix** — wire the `registration` config object into `register.html` (or remove it). Small.
 - **`DECISIONS.md` status update** — move D-0005, D-0007, D-0008 from PROPOSED to CONFIRMED (assuming you're happy with them).

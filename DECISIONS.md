@@ -39,7 +39,7 @@ AI proposals are recorded as PROPOSED until the owner confirms them.
 
 ## D-0005 — Registration page is a non-collecting demonstration
 - **Date:** 2026-11-20
-- **Status:** PROPOSED (pending owner confirmation)
+- **Status:** CONFIRMED
 - **Decision:** `register.html` implements full client-side validation and a demonstration submit. On submit, the form is reset, field values are cleared from the DOM, and a success panel is shown. No `fetch`, no `localStorage`, no `sessionStorage`, no console logging of entered values.
 - **Reason:** Satisfies the development prompt requirement ("do not collect or transmit real personal information; do not store real passwords; clearly treat registration as a demonstration") without prematurely committing to an auth provider.
 - **Alternatives considered:** A real backend with hashed passwords (deferred — out of scope for this stage); a fully static form that does nothing on submit (rejected — poorer UX and doesn't demonstrate the intended workflow).
@@ -57,7 +57,7 @@ AI proposals are recorded as PROPOSED until the owner confirms them.
 
 ## D-0007 — Dashboard is mock-data only and openly reachable
 - **Date:** 2026-11-20
-- **Status:** PROPOSED (pending owner confirmation; supersedes the prototype-limitation note in D-0003)
+- **Status:** CONFIRMED (supersedes the prototype-limitation note in D-0003)
 - **Decision:** `dashboard.html` renders a fictional learner (`mockLearner`), fictional progress (`mockProgress`) and fictional activity (`mockActivity`) from `course-config.js`. It is reachable without authentication. No data is written or read from storage. A visible prototype notice on the page and a note in the README explain the limitation.
 - **Reason:** Real authentication and learner records are out of scope for this stage (master brief §7.4). A safe, clearly-flagged mock allows UX validation without prematurely committing to an auth/DB provider.
 - **Risk:** The page must not be deployed to a public production domain while openly reachable. This will be re-flagged before any deployment. The mock data must never be replaced with real learner data until auth and privacy review are complete.
@@ -65,7 +65,7 @@ AI proposals are recorded as PROPOSED until the owner confirms them.
 
 ## D-0008 — Progress model (demonstration)
 - **Date:** 2026-11-20
-- **Status:** PROPOSED
+- **Status:** CONFIRMED
 - **Decision:** Overall progress is computed as `(completed modules + in-progress position) / total modules`, rounded to the nearest percent. This is a UI demonstration, not an agreed academic or completion rule.
 - **Reason:** The master brief does not yet define a final progress calculation. This is a placeholder that can be replaced when completion rules are approved.
 - **Approver:** Owner (pending)

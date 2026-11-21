@@ -1,5 +1,26 @@
 # Changelog
 
+## [Unreleased] — Module 3 draft content
+### Added
+- `docs/Module_03_Content.md` — draft content for Module 3 ("Selecting appropriate control methods"), following the Module 1/2 pattern.
+- `m3` entry in `js/config/module-content.js` — explicit draft content; `templateFor` loop now fills `m4`–`m7` only.
+- Source register entries S-0008 through S-0012 (Module 3 candidate sources), all `RESEARCH REQUIRED`.
+
+### Changed
+- `js/config/module-content.js` — `m3` no longer generated from `templateFor`.
+- `docs/Source_Register.md` — restored `# Source register` heading and `**Notes:**` block; added S-0008–S-0012.
+
+### Notes
+- Module 3 is the module closest to the brief's chemical-use boundary (§2.3, §4 Module 3 "Important"). It stays strictly on method-selection reasoning. No product names, rates, mixtures, application methods or label paraphrases.
+- All Module 3 content is DRAFT, pending owner review. No factual claims about weeds, chemicals, ecology or regulation.
+- No data collected, transmitted or stored.
+
+### Not yet built
+- Verified content for any module (blocked pending curriculum approval and [VERIFY] resolution).
+- Persistence of progress.
+- PWA manifest and service worker.
+- Real auth, backend, certificates, reporting.
+
 ## [Unreleased] — Stage 4: Module shell (placeholder)
 ### Added
 - `module.html` — single template used by all seven modules via `?id=` query string.

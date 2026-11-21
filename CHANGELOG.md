@@ -21,6 +21,15 @@
 - PWA manifest and service worker.
 - Real auth, backend, certificates, reporting.
 
+## [Unreleased] — Documentation tidy
+### Changed
+- `README.md` — added `module.html`, `js/module.js`, `css/pages/module.css` to structure and page table; split Configuration section into `course-config.js` and `module-content.js`; updated status, known limitations, testing and next steps to match the four-page prototype; corrected stale `registration` note (D-0006 is CONFIRMED); removed duplicated handover fragment from the tail.
+- `CHANGELOG.md` — re-saved as UTF-8 (previous version had mojibake in em dashes, en dashes and section signs); folded the un-prefixed `dashboard (mock)` block into a proper Stage 3 heading; removed the dangling `## [Unreleased] — Stage 3: Learner` heading with no body.
+- `DECISIONS.md` — D-0005, D-0007, D-0008 statuses moved from PROPOSED to CONFIRMED.
+
+### Notes
+- No code changes. Documentation-only pass.
+
 ## [Unreleased] — Stage 4: Module shell (placeholder)
 ### Added
 - `module.html` — single template used by all seven modules via `?id=` query string.
@@ -56,7 +65,7 @@
 - No functional change to validation or the demonstration submit behaviour.
 - No data collected, transmitted or stored.
 
-dashboard (mock)
+## [Unreleased] — Stage 3: Learner dashboard (mock)
 ### Added
 - `dashboard.html` — learner dashboard with sticky app header, profile panel, welcome, progress overview, module list, recent activity, certificate placeholder, prototype notice.
 - `css/pages/dashboard.css`.
@@ -112,5 +121,3 @@ dashboard (mock)
 - Dashboard.
 - PWA manifest and service worker.
 - Any backend, auth or persistence.
-
-## [Unreleased] — Stage 3: Learner 

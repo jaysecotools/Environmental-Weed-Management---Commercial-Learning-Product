@@ -163,9 +163,174 @@ export const moduleContent = {
       ],
     },
   },
+
+  m2: {
+    // DRAFT content — pending owner review and approval.
+    // Uses only examples named in the master brief. No verified Tasmanian
+    // specific claims; items requiring verification are marked [VERIFY] in
+    // the corresponding docs/Module_02_Content.md.
+    learningOutcomes: [
+      "Explain why accurate identification of the target weed matters before any control decision is made.",
+      "Recognise the risk of confusing native or other non-target vegetation with the target weed.",
+      "Describe how a weed's life cycle, reproduction and spread pathways influence the ecological impacts it causes.",
+      "Identify when identification should be confirmed by a suitably qualified person before work proceeds.",
+    ],
+    sections: [
+      {
+        heading: "Why identification comes before treatment",
+        body: [
+          "A control decision depends on knowing what you are controlling. If the target is misidentified, the method, timing and site selection can all be wrong — and the work may damage what you were trying to protect.",
+          "Identification uncertainty is normal in the field. A contractor does not need to be a botanist, but they do need to recognise when they are not certain, and to know what to do about it. The safe response to uncertainty is not to guess and proceed. It is to pause, gather more information, and escalate if needed.",
+        ],
+      },
+      {
+        heading: "Target weeds and non-target vegetation",
+        body: [
+          "In a natural-environment site, the target weed is rarely the only plant present. Native shrubs, groundcovers, grasses, sedges and regenerating seedlings may be mixed through or adjacent to the infestation. Some of them may look similar to the weed at certain growth stages or in certain conditions.",
+          "Treating the whole area on the assumption that everything is the target is one of the most avoidable causes of environmental damage in weed control. The contractor's job is to notice what else is present, and to consider how the method and timing will affect it.",
+          "Examples the brief names, used illustratively: blackberry may be mixed with native shrubs and groundcovers along a riparian edge, making a blanket treatment inappropriate; gorse seedlings can be confused with some native shrubs at early growth stages, and dense gorse can hide native regeneration beneath it; Spanish heath presents similar identification challenges in some settings [VERIFY: confirm Tasmanian relevance and any look-alike native species before publication]. The principle is the same across all of them: know what you are treating, and know what you are not.",
+        ],
+      },
+      {
+        heading: "Life cycles, reproduction and spread",
+        body: [
+          "A weed's life cycle tells you when it is most vulnerable and when it is most likely to spread. Reproduction and spread pathways tell you where the next infestation is likely to come from.",
+          "Key concepts a contractor should be able to recognise, without needing to memorise species-specific detail: annual, biennial and perennial life cycles; seed banks that can persist in soil for years; vegetative reproduction from fragments, rhizomes or runners; and spread pathways including machinery, vehicles, tools, boots, clothing, water, wind and animals. Some spread pathways are covered in more depth in Module 5. [VERIFY: link to a Tasmanian weed biology reference for contractors, once identified.]",
+        ],
+      },
+      {
+        heading: "Ecological impacts",
+        body: [
+          "Weed control in natural environments is worth doing because weeds cause harm. Understanding the harm helps a contractor make defensible decisions about whether and how to intervene.",
+          "Impacts a contractor should be able to recognise: competition with native plants for light, water and nutrients; altered vegetation structure; habitat change for fauna; fire and disturbance interactions; and downstream or off-site impacts such as sediment, altered water flow, or spread into adjacent areas. [VERIFY: link to an authoritative Tasmanian or Australian source on ecological impacts of the named weeds, once identified.]",
+          "None of this makes every weed a priority everywhere. It helps a contractor ask: what is this weed doing here, and what would change if it were controlled?",
+        ],
+      },
+      {
+        heading: "When to confirm identification",
+        body: [
+          "There are situations where a contractor should not proceed on their own identification: when the target cannot be confidently distinguished from a native or protected species; when the site may contain a species of conservation significance; when the weed is unfamiliar or the infestation is in an unfamiliar vegetation community; or when the site plan or client direction assumes an identification the contractor cannot verify.",
+          "In these cases, the appropriate response is to pause and seek confirmation from a suitably qualified person — a botanist, an ecologist, or the site manager's nominated adviser — before work proceeds. This is not a failure of competence. It is professional practice, and it is consistent with the contractor's role described in Module 1.",
+        ],
+      },
+    ],
+    fieldContext: {
+      heading: "Tasmanian field context",
+      body:
+        "Placeholder example, structurally realistic and generic — to be replaced with a verified Tasmanian example before publication. A contractor is asked to treat a gorse infestation on a bushland reserve block. Before starting, they walk the site and notice that the outer edge of the gorse is mixed with native shrubs, some of which are at a similar height and have a similar growth habit. In one corner, the gorse appears to be hiding lower native regeneration. The contractor cannot confidently separate the gorse seedlings from the native seedlings in that corner without closer inspection. The contractor's notes before work begins record the mixed native shrubs, the area where gorse and native regeneration overlap, the uncertainty about seedling identification, and a request to the site manager to arrange confirmation by a suitably qualified person before that corner is treated. [VERIFY before publication.]",
+    },
+    activity: {
+      heading: "Interactive activity",
+      body:
+        "Placeholder text. In the built module, this section will contain an interactive identification or observation activity. Draft concept: the learner is shown or described a site with a target weed and mixed surrounding vegetation, and asked to identify which plants they are confident are the target, which they are not confident about, and what they would do next — proceed, gather more information, or escalate. A second concept mirrors the brief's suggestion to compare two sites with the same weed but different surrounding values, and ask which ecological impacts are most relevant at each site and why. The activities test observation, uncertainty recognition and judgement, not recall.",
+    },
+    knowledgeCheck: {
+      heading: "Knowledge check",
+      note:
+        "These questions test reasoning rather than recall. They carry no pass/fail meaning in this draft and are pending approval with the rest of the module.",
+      questions: [
+        {
+          id: "q1",
+          prompt:
+            "A contractor is confident they have identified the target weed on a site, but notices native seedlings mixed through the outer edge of the infestation. What is the most appropriate first response?",
+          options: [
+            "Treat the whole area and accept some native seedling loss.",
+            "Note the mixed vegetation and pause to consider how the method and timing will affect the native seedlings before proceeding.",
+            "Remove the native seedlings first to simplify the job.",
+            "Ignore the seedlings — they are not the target weed.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — non-target vegetation is part of the identification picture and should influence the decision.",
+          feedbackIncorrect:
+            "Native seedlings are an environmental value to protect, not an obstacle. Notice them and factor them in.",
+        },
+        {
+          id: "q2",
+          prompt:
+            "Which of these best describes why a weed's life cycle matters to a contractor?",
+          options: [
+            "It determines the colour of the flowers.",
+            "It affects when the plant is most vulnerable and when it is most likely to set seed and spread.",
+            "It only matters for agricultural weeds.",
+            "It determines which herbicide is legal to use.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — life cycle informs timing, follow-up and spread risk.",
+          feedbackIncorrect:
+            "Life cycle affects vulnerability and spread timing, which shape control decisions.",
+        },
+        {
+          id: "q3",
+          prompt:
+            "A contractor is unfamiliar with a plant they believe is the target weed, and the site may contain a species of conservation significance. What should they do?",
+          options: [
+            "Proceed with the treatment and note the uncertainty afterwards.",
+            "Pause and seek confirmation from a suitably qualified person before proceeding.",
+            "Assume the plant is the target because the site plan says so.",
+            "Ask another contractor to make the decision.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — pausing and escalating is professional practice when identification is uncertain.",
+          feedbackIncorrect:
+            "Recognising the limits of your identification and escalating is a core skill.",
+        },
+        {
+          id: "q4",
+          prompt:
+            "Which of these is the best example of an ecological impact a weed might cause on a natural-environment site?",
+          options: [
+            "The contractor's vehicle uses more fuel.",
+            "The weed changes the structure of the understorey and reduces habitat for small fauna.",
+            "The weed is a different colour from the surrounding vegetation.",
+            "The weed grows on a different day of the week.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — altered vegetation structure and habitat change are core ecological impacts.",
+          feedbackIncorrect:
+            "Look for impacts on native vegetation, fauna habitat or ecosystem processes.",
+        },
+        {
+          id: "q5",
+          prompt:
+            "Which statement best describes a contractor's identification responsibilities?",
+          options: [
+            "A contractor must be able to identify every plant on a site before starting work.",
+            "A contractor should identify the target weed with reasonable confidence and escalate when uncertain, especially where native or significant species may be present.",
+            "A contractor should rely entirely on the site plan's identification.",
+            "A contractor should only identify the target weed and ignore everything else.",
+          ],
+          correctIndex: 1,
+          feedbackCorrect:
+            "Correct — reasonable confidence plus escalation when uncertain is the professional standard.",
+          feedbackIncorrect:
+            "The contractor is not expected to be a botanist, but is expected to recognise uncertainty and act on it.",
+        },
+      ],
+    },
+    takeaway: {
+      heading: "Practical takeaway",
+      body:
+        "Before your next job in a natural environment, ask three identification questions. What am I confident is the target weed? What am I not confident about — which plants can I not confidently separate from the target, and where are they? What else is here that I need to protect — native vegetation, regeneration, habitat features, significant species? If you cannot answer the second question with confidence, that is the signal to pause and escalate, not to proceed and hope.",
+    },
+    references: {
+      heading: "References and further guidance",
+      note:
+        "RESEARCH REQUIRED — no reference below is cited as supporting a specific statement in this module until it has been verified and recorded in docs/Source_Register.md.",
+      items: [
+        "NRE Tas (Natural Resources and Environment Tasmania) — weed identification and ecological impact guidance. [VERIFY: specific page(s) and date checked]",
+        "Biosecurity Act 2019 (Tas) — any relevant identification, notification or declaration requirements. [VERIFY: specific sections and current commencement status]",
+        "Weed Society of Tasmania — practitioner identification guidance. [VERIFY: suitability as an authoritative source for this module]",
+        "A recognised Tasmanian or Australian native plant identification reference — for non-target vegetation awareness. [VERIFY: title, publisher and suitability]",
+      ],
+    },
+  },
 };
-  
-/* Generate placeholder entries for modules m2–m7 from the same template. */
+
+/* Generate placeholder entries for modules m3–m7 from the same template. */
 const templateFor = (moduleId) => ({
   learningOutcomes: [
     `Placeholder outcome for ${moduleId} — outcome 1.`,
@@ -235,7 +400,7 @@ const templateFor = (moduleId) => ({
   },
 });
 
-for (const id of ["m2", "m3", "m4", "m5", "m6", "m7"]) {
+for (const id of ["m3", "m4", "m5", "m6", "m7"]) {
   if (!moduleContent[id]) moduleContent[id] = templateFor(id);
 }
 
